@@ -2,24 +2,28 @@
 
 Public reports and monthly AI & cybersecurity reviews from Common DevOps.
 
-## Latest report
+## Source of truth
+
+Permanent report URLs under `/reports/YYYY-MM/` are the authoritative published editions.
 
 ### September 2026 — AI Got Cheaper. Control Got Harder.
 
-- Live newsletter: https://schneidergithub.github.io/common-devops-reports/
-- Permanent archive: https://schneidergithub.github.io/common-devops-reports/reports/2026-09/
-- Markdown source: [reports/2026-09/newsletter.md](reports/2026-09/newsletter.md)
+**Canonical publication:**  
+https://www.aaronschneider.org/common-devops-reports/reports/2026-09/
 
-Topics include AI security disclosures, independent agent evaluations, model releases, software supply-chain security, and the Common DevOps node-ipc investigation.
+- Reports archive: https://www.aaronschneider.org/common-devops-reports/
+- Markdown source: [reports/2026-09/newsletter.md](reports/2026-09/newsletter.md)
 
 ## Publishing structure
 
 ```
-index.html                  # current issue
+index.html
+.nojekyll
 reports/
+  index.html
   2026-09/
-    index.html              # permanent web edition
-    newsletter.md           # editable/source edition
+    index.html
+    newsletter.md
 ```
 
-Future monthly issues can be added under `reports/YYYY-MM/` while `index.html` points to the current edition.
+Each monthly issue receives a permanent `reports/YYYY-MM/` URL. The repository root is an archive/index rather than a duplicate copy of the latest report.
