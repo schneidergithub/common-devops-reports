@@ -42,7 +42,7 @@ a{color:#1c527f;text-underline-offset:3px}a:focus-visible{outline:3px solid var(
 .brand strong{font-size:22px;letter-spacing:1.4px}.brand span{color:#b1c4d9;font-size:11px;letter-spacing:1.7px;text-transform:uppercase}
 .kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.7px;color:#67d5e3;font-weight:bold;margin:21px 0 9px}
 h1{font-size:49px;line-height:1.1;letter-spacing:-1.7px;margin:0}h1 span{display:block;color:var(--coral)}.deck{color:#c4d3e5;font-size:13px;margin:17px 0 0}
-.content{padding:0 45px 30px}.publication-links{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);font-size:13px}.download{font-weight:bold}
+.content{padding:0 45px 30px}.publication-links{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);font-size:13px}.publication-links a{display:inline-flex;align-items:center;min-height:44px}.download{font-weight:bold}
 .intro{font-size:18px;line-height:1.6;padding:24px 0;border-bottom:1px solid var(--line);margin:0 0 26px}
 .stories{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 36px}.story{border-bottom:1px solid var(--line);padding-bottom:22px;break-inside:avoid}
 .label{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:12px;margin-bottom:12px}.badge{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center;width:27px;height:27px;background:var(--red);color:white;border-radius:50%;font-weight:bold}
@@ -62,7 +62,7 @@ head = f'''<!doctype html>
 <header class="masthead"><div class="brand"><strong>COMMON DEVOPS</strong><span>October 2026</span></div>
 <p class="kicker">AI &amp; Cybersecurity Monthly Review</p><h1>Cybersecurity Must<span>Keep Pace with AI</span></h1>
 <p class="deck">October 1 to November 1, 2026</p></header><div class="content">
-<nav class="publication-links" aria-label="Report navigation"><a href="../../">Back to report archive</a><a class="download" href="./common-devops-october-2026.pdf" download>Download PDF</a></nav>
+<nav class="publication-links" aria-label="Report navigation"><a href="../../">Report archive</a><a href="/articles/#october-review">October issue in Articles &amp; Demos</a><a class="download" href="./common-devops-october-2026.pdf" download>Download PDF</a></nav>
 <p class="intro">{escape(intro)}</p><div class="stories">'''
 body = '\n'.join(f'<section class="story" id="story-{n}"><div class="label"><span class="badge">{n}</span><span>{escape(d)}</span></div><h2>{escape(h)}</h2><p>{linked(b)}</p></section>' for n,h,d,b in stories)
 tail = f'''</div><p class="reporting">{escape(note)}</p><footer><span>Report by Common DevOps</span><a href="https://www.youtube.com/@commondevops">Common DevOps on YouTube</a><span>October 1 to November 1, 2026</span></footer></div></article></main></body></html>'''
