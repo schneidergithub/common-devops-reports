@@ -62,7 +62,7 @@ head = f'''<!doctype html>
 <header class="masthead"><div class="brand"><strong>COMMON DEVOPS</strong><span>October 2026</span></div>
 <p class="kicker">AI &amp; Cybersecurity Monthly Review</p><h1>Cybersecurity Must<span>Keep Pace with AI</span></h1>
 <p class="deck">October 1 to November 1, 2026</p></header><div class="content">
-<nav class="publication-links" aria-label="Report navigation"><a href="../../">Report archive</a><a href="/articles/#october-review">October issue in Articles &amp; Demos</a><a class="download" href="./common-devops-october-2026.pdf" download>Download PDF</a></nav>
+<nav class="publication-links" aria-label="Report navigation"><a href="https://www.linkedin.com/pulse/october-2026-ai-security-controls-keeping-up-commondevops-a632c/">Read October on LinkedIn</a><a href="/articles/#monthly-reviews">Monthly newsletter archive</a><a href="../../">Report archive</a><a class="download" href="./common-devops-october-2026.pdf" download>Download PDF</a></nav>
 <p class="intro">{escape(intro)}</p><div class="stories">'''
 body = '\n'.join(f'<section class="story" id="story-{n}"><div class="label"><span class="badge">{n}</span><span>{escape(d)}</span></div><h2>{escape(h)}</h2><p>{linked(b)}</p></section>' for n,h,d,b in stories)
 tail = f'''</div><p class="reporting">{escape(note)}</p><footer><span>Report by Common DevOps</span><a href="https://www.youtube.com/@commondevops">Common DevOps on YouTube</a><span>October 1 to November 1, 2026</span></footer></div></article></main></body></html>'''
