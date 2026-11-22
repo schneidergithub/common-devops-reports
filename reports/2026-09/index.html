@@ -16,6 +16,9 @@ html { scroll-behavior:smooth; }
 body { margin:0; background:#eaf0f6; color:var(--ink); font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.55; }
 a { color:#1c527f; text-decoration-thickness:1px; text-underline-offset:3px; }
 a:focus-visible { outline:3px solid var(--red); outline-offset:3px; }
+.publication-links { display:flex; flex-wrap:wrap; gap:0 1.25rem; margin-top:.5rem; font-size:.9rem; }
+.publication-links a { display:inline-flex; align-items:center; min-height:44px; }
+@media print { .publication-links { display:none; } }
 .wrap { max-width:1060px; margin:36px auto; box-shadow:0 10px 60px #08192e16; background:var(--paper); }
 .sheet { padding:34px 45px; }
 .sheet:first-child { padding-top:0; }
@@ -196,6 +199,7 @@ footer a { color:inherit; }
 <p class="deck">More capable agents. Lower prices. New evidence about who controls the work.</p>
 <div class="tracks"><span>Security disclosures</span><span>Model launches</span><span>Software supply chain</span></div>
 </header>
+<nav class="publication-links" aria-label="Report navigation"><a href="../../">Report archive</a><a href="/articles/#september-review">September issue in Articles &amp; Demos</a></nav>
 <p class="intro">September delivered more capable models at lower prices—and new evidence that completing a task and respecting its boundaries are different problems. OpenAI expanded GPT-6, Anthropic refreshed Claude, and Google announced Gemini 4 Argon with restricted initial access. The security disclosures made the other half of that progress impossible to ignore. <sup><a aria-label="Source 10" href="#source-10">10</a></sup> <sup><a aria-label="Source 11" href="#source-11">11</a></sup> <sup><a aria-label="Source 14" href="#source-14">14</a></sup> <sup><a aria-label="Source 1" href="#source-1">1</a></sup></p>
 <div class="grid">
 <div>
